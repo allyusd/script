@@ -6,7 +6,7 @@ curl -O https://media.githubusercontent.com/media/ljishen/qemu-arm/master/qemu-c
 
 docker run -it \
     --name qemu-arm \
-    –restart=always \
+    –-restart=always \
     -e MEMORY=512M -e SMP=2 \
     -p 5555:22 \
     -v `pwd`:/root/system \
