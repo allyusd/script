@@ -18,7 +18,9 @@ and after install docker need add user to docker group
 and need relogin.
 
 ```
+sudo apt install curl -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/allyusd/script/master/init.sh)"
+sudo usermod -aG docker $USER
 ```
 
 ## Init New Ubuntu Desktop
